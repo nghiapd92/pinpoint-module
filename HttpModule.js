@@ -8,6 +8,8 @@ module.exports = class HttpModule{
 	constructor(options){
 		this.name = options.name;
 
+		this.endpoint = options.endpoint;
+		
 		this.router = options.router;
 
 		this.auth = options.auth;
