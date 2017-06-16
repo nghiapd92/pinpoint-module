@@ -10,7 +10,7 @@ module.exports = class HttpModule{
 
 		this.endpoint = options.endpoint;
 		
-		this.router = options.router;
+		this.router = require(process.cwd() + `/modules/${this.name}/router`);
 
 		this.auth = options.auth;
 	}
